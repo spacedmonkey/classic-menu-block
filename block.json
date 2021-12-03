@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "spacedmonkey/classic-menu-block",
+	"version": "0.1.0",
+	"title": "Classic Menu Block",
+	"category": "theme",
+	"description": "A gutenberg block to use classic menus.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"anchor": {
+			 "type": "string"
+		},
+		"menu": {
+			"type": "number",
+			"default": 0
+		}
+	},
+	"textdomain": "classic-menu-block",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
