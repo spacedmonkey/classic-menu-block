@@ -63,7 +63,7 @@ function render_block_classic_menu( $attrs ) {
 	 * @param array $menu_attrs Menu attributes.
 	 * @param array $attrs Block attributes.
 	 */
-	$menu_attrs = apply_filters('classic_menu_block_attribautes', $menu_attrs, $attrs );
+	$menu_attrs = apply_filters('classic_menu_block_attributes', $menu_attrs, $attrs );
 
 
 	return (string) wp_nav_menu( $menu_attrs );
