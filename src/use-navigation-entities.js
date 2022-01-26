@@ -27,7 +27,7 @@ export default function useNavigationEntities() {
 			const { getMenus, isResolving, hasFinishedResolution } =
 				select(coreStore);
 
-			const menusParameters = [{ per_page: -1 }];
+			const menusParameters = [{ per_page: -1, context: 'view' }];
 
 			return {
 				menus: getMenus(...menusParameters),

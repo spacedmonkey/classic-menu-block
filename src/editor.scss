@@ -5,7 +5,8 @@
  */
 
 .wp-block-spacedmonkey-classic-menu-block {
-  .components-placeholder__fieldset, .components-placeholder__fieldset form{
-	display: block;
-  }
+
+	.components-base-control__field {
+		min-width: 180px;
+	}
 }

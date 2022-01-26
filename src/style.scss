@@ -1,43 +1,46 @@
 .wp-classic-menu-block {
-  > .menu {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	width: 100%;
-	text-align: left;
 
-	ul {
-	  margin: 0;
-	  padding: 0;
-	  list-style: none;
-	  position: absolute;
-	  left: -999em; // "Hide" the sub-menus
-	}
+	> .menu {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		width: 100%;
+		text-align: left;
 
-	li {
-	  display: inline-block;
-	  position: relative;
-	  text-align: left; // Reset text alignment
-	  padding-right: var(--wp--style--block-gap, 2em);
-
-	  // First sub-menus appear below the menu item
-	  &:hover {
-		> ul {
-		  left: auto;
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			position: absolute;
+			left: -999em; // "Hide" the sub-menus
 		}
-	  }
 
-	  // All other levels appear on the right
-	  li {
-		display: block;
+		li {
+			display: inline-block;
+			position: relative;
+			text-align: left; // Reset text alignment
+			padding-right: var(--wp--style--block-gap, 2em);
 
-		&:hover {
-		  > ul {
-			left: 100%;
-			top: 0;
-		  }
+			// First sub-menus appear below the menu item
+			&:hover {
+
+				> ul {
+					left: auto;
+				}
+			}
+
+			// All other levels appear on the right
+			li {
+				display: block;
+
+				&:hover {
+
+					> ul {
+						left: 100%;
+						top: 0;
+					}
+				}
+			}
 		}
-	  }
 	}
-  }
 }
