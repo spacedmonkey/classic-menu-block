@@ -7,7 +7,7 @@ Requires PHP: 5.6
 License: GPL v2 or later
 Tags: block, menu, navigation
 Contributors: spacedmonkey
-Donate link: https://github.com/sponsors/spacedmonkey
+Donate link: <https://github.com/sponsors/spacedmonkey>
 
 A gutenberg block to use classic menus.
 
