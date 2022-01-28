@@ -2,9 +2,9 @@ name: Asset update
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
-  master:
+  main:
     name: Push to main
     runs-on: ubuntu-latest
     steps:
