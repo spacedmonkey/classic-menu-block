@@ -1,11 +1,13 @@
 <?php
 /**
  * Plugin Name:       Classic Menu Block
+ * Plugin URI:        https://github.com/spacedmonkey/classic-menu-block
  * Description:       A gutenberg block to use classic menus.
  * Requires at least: 5.9
  * Requires PHP:      5.6
  * Version:           0.1.2
  * Author:            Jonathan Harris
+ * Author URI:        https://www.spacedmonkey.com/
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       classic-menu-block
