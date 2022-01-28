@@ -12,16 +12,15 @@
 			padding: 0;
 			list-style: none;
 			position: absolute;
-			left: -999em; // "Hide" the sub-menus
+			left: -999em;
 		}
 
 		li {
 			display: inline-block;
 			position: relative;
-			text-align: left; // Reset text alignment
+			text-align: left;
 			padding-right: var(--wp--style--block-gap, 2em);
 
-			// First sub-menus appear below the menu item
 			&:hover {
 
 				> ul {
@@ -29,7 +28,6 @@
 				}
 			}
 
-			// All other levels appear on the right
 			li {
 				display: block;
 
