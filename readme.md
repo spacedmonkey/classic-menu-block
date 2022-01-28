@@ -1,12 +1,12 @@
 # Classic Menu Block
 
-Stable tag: 0.1.1
-Requires at least: 5.9
-Tested up to: 5.9
-Requires PHP: 5.6
-License: GPL v2 or later
-Tags: block, menu, navigation
-Contributors: spacedmonkey
+Stable tag: 0.1.1  
+Requires at least: 5.9  
+Tested up to: 5.9  
+Requires PHP: 5.6  
+License: GPL v2 or later  
+Tags: block, menu, navigation  
+Contributors: spacedmonkey  
 Donate link: <https://github.com/sponsors/spacedmonkey>
 
 ![](.wordpress-org/banner-1544x500.png)
