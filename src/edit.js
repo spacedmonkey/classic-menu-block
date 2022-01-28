@@ -46,7 +46,7 @@ export default function Edit({ setAttributes, attributes, isSelected }) {
 		<div {...useBlockProps()}>
 			{isSelected || !menu ? (
 				<Placeholder
-					label={__('Legacy menu', 'classic-menu-block')}
+					label={__('Classic menu', 'classic-menu-block')}
 					icon={icon}
 				>
 					<SelectControl

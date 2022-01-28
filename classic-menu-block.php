@@ -4,7 +4,7 @@
  * Description:       A gutenberg block to use classic menus.
  * Requires at least: 5.9
  * Requires PHP:      5.6
- * Version:           0.1.1
+ * Version:           0.1.2
  * Author:            Jonathan Harris
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
