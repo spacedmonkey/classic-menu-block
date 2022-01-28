@@ -21,14 +21,12 @@ Use classic menus in gutenberg, using this block. This block renders classic men
 
 This section describes how to install the plugin and get it working.
 
-e.g.
-
 1. Upload the plugin files to the `/wp-content/plugins/classic-menu-block` directory, or install the plugin through the WordPress plugins screen directly.
 1. Activate the plugin through the 'Plugins' screen in WordPress
 
 ## Screenshots
 
-1. The navigation block (.wordpress-org/screenshot-1.png)
+1. The navigation block <br>![Block](.wordpress-org/screenshot-1.png)
 
 ### Do you accept donations?
 
