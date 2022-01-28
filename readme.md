@@ -9,6 +9,8 @@ Tags: block, menu, navigation
 Contributors: spacedmonkey
 Donate link: <https://github.com/sponsors/spacedmonkey>
 
+![](.wordpress-org/banner-1544x500.png)
+
 A gutenberg block to use classic menus.
 
 ## Description
