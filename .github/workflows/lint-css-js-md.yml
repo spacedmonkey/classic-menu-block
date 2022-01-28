@@ -1,0 +1,70 @@
+name: Lint CSS/JS
+
+on:
+  push:
+    # Only run if CSS/JS/MD-related files changed.
+    paths:
+      - '**.js'
+      - '**.cjs'
+      - '**.css'
+      - 'packages/**/*.md'
+      - '.eslint*'
+      - '.markdownlint*'
+      - '.npmpackagejsonlintrc.json'
+      - '.nvmrc'
+      - '.prettier*'
+      - '.stylelint*'
+      - '**/package.json'
+      - 'package-lock.json'
+    branches:
+      - main
+      - release/*
+  pull_request:
+    # Only run if CSS/JS/MD-related files changed.
+    paths:
+      - '**.js'
+      - '**.cjs'
+      - '**.css'
+      - 'packages/**/*.md'
+      - '.eslint*'
+      - '.markdownlint*'
+      - '.npmpackagejsonlintrc.json'
+      - '.nvmrc'
+      - '.prettier*'
+      - '.stylelint*'
+      - '**/package.json'
+      - 'package-lock.json'
+
+# Cancels all previous workflow runs for pull requests that have not completed.
+concurrency:
+  # The concurrency group contains the workflow name and the branch name for pull requests
+  # or the commit hash for any other events.
+  group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.head_ref || github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v2.5.1
+        with:
+          node-version-file: '.nvmrc'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Markdown Lint
+        run: npm run lint:md
+
+      - name: CSS Lint
+        run: npm run lint:css
+
+      - name: JS Lint
+        run: npm run lint:js
