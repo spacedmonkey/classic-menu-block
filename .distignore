@@ -14,6 +14,7 @@ Thumbs.db
 behat.yml
 bitbucket-pipelines.yml
 bin
+vendor
 src
 .circleci/config.yml
 .github
