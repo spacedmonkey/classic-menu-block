@@ -5,7 +5,7 @@
  * Description:       A gutenberg block to use classic menus.
  * Requires at least: 5.9
  * Requires PHP:      5.6
- * Version:           0.1.4
+ * Version:           0.1.5
  * Author:            Jonathan Harris
  * Author URI:        https://www.spacedmonkey.com/
  * License:           GPL-2.0-or-later

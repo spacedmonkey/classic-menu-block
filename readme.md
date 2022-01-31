@@ -1,6 +1,6 @@
 # Classic Menu Block
 
-Stable tag: 0.1.4  
+Stable tag: 0.1.5  
 Requires at least: 5.9  
 Tested up to: 5.9  
 Requires PHP: 5.6  
