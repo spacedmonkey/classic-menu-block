@@ -6,6 +6,7 @@
 .gitlab-ci.yml
 .travis.yml
 .DS_Store
+.stylelintrc.json
 .wordpress-org
 composer.json
 composer.lock
@@ -13,6 +14,7 @@ Thumbs.db
 behat.yml
 bitbucket-pipelines.yml
 bin
+src
 .circleci/config.yml
 .github
 Gruntfile.js
