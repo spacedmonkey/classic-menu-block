@@ -42,9 +42,10 @@ function render_block_classic_menu( $attrs ) {
 	$attrs      = wp_parse_args(
 		$attrs,
 		[
-			'className' => '',
-			'anchor'    => '',
-			'menu'      => 0,
+			'className'      => '',
+			'anchor'         => '',
+			'menu'           => 0,
+			'theme_location' => '',
 		]
 	);
 	$menu_attrs = [
@@ -52,6 +53,7 @@ function render_block_classic_menu( $attrs ) {
 		'container_class' => 'wp-classic-menu-block ' . $attrs['className'],
 		'container_id'    => $attrs['anchor'],
 		'menu'            => $attrs['menu'],
+		'theme_location'  => $attrs['theme_location'],
 	];
 
 	/**
