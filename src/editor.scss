@@ -5,6 +5,9 @@
  */
 
 .wp-block-spacedmonkey-classic-menu-block {
+	.components-placeholder__fieldset {
+		gap: 16px;
+	}
 
 	.components-base-control__field {
 		min-width: 180px;

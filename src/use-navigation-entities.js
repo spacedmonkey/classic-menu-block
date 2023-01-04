@@ -22,9 +22,9 @@ import { store as coreStore } from '@wordpress/core-data';
  * @return { NavigationEntitiesData } the entity data.
  */
 export default function useNavigationEntities() {
-	const { menus, isResolvingMenus, hasResolvedMenus } = useSelect(
+	const { menus, isResolvingMenus, hasResolvedMenus, locations, isResolvingLocations, hasResolvedLocations } = useSelect(
 		(select) => {
-			const { getMenus, isResolving, hasFinishedResolution } =
+			const { getMenus, getMenuLocations, isResolving, hasFinishedResolution } =
 				select(coreStore);
 
 			const menusParameters = [{ per_page: -1, context: 'view' }];
@@ -36,6 +36,9 @@ export default function useNavigationEntities() {
 					'getMenus',
 					menusParameters
 				),
+				locations: getMenuLocations(),
+				isResolvingLocations: isResolving('getMenuLocations'),
+				hasResolvedLocations: hasFinishedResolution('getMenuLocations'),
 			};
 		},
 		[]
@@ -46,5 +49,9 @@ export default function useNavigationEntities() {
 		isResolvingMenus,
 		hasResolvedMenus,
 		hasMenus: !!(hasResolvedMenus && menus?.length),
+		locations,
+		isResolvingLocations,
+		hasResolvedLocations,
+		hasLocations: !!(hasResolvedLocations && locations?.length),
 	};
 }

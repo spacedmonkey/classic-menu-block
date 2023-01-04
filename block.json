@@ -17,6 +17,9 @@
 		"menu": {
 			"type": "number",
 			"default": 0
+		},
+		"theme_location": {
+			"type": "string"
 		}
 	},
 	"textdomain": "classic-menu-block",

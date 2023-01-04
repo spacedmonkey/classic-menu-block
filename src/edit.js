@@ -27,14 +27,21 @@ const { name } = metadata;
  * @return {WPElement} Element to render.
  */
 export default function Edit({ setAttributes, attributes, isSelected }) {
-	const { menu = 0 } = attributes || {};
+	const { menu = 0, theme_location = '' } = attributes || {};
 
-	const { menus, hasMenus } = useNavigationEntities();
+	const { menus, hasMenus, locations, hasLocations } = useNavigationEntities();
 
-	const options = [{ value: 0, label: __('Not set', 'classic-menu-block') }];
+	const menu_options = [{ value: 0, label: __('Menu not set', 'classic-menu-block') }];
 	if (hasMenus) {
 		menus.forEach(function (item) {
-			options.push({ value: parseInt(item.id), label: item.name });
+			menu_options.push({ value: parseInt(item.id), label: item.name });
+		});
+	}
+
+	const location_options = [{ value: '', label: __('Location not set', 'classic-menu-block') }];
+	if (hasLocations) {
+		locations.forEach(function (item) {
+			location_options.push({ value: item.name, label: item.description });
 		});
 	}
 
@@ -42,18 +49,31 @@ export default function Edit({ setAttributes, attributes, isSelected }) {
 		setAttributes({ menu: parseInt(value) });
 	};
 
+	const onSaveLocation = (value) => {
+		setAttributes({ theme_location: value });
+	};
+
 	return (
 		<div {...useBlockProps()}>
-			{isSelected || !menu ? (
+			{isSelected || (!menu && !theme_location) ? (
 				<Placeholder
 					label={__('Classic menu', 'classic-menu-block')}
 					icon={icon}
+					instructions={__('Select a menu or a theme location. The selected menu overrules the selected theme location.', 'classic-menu-block')}
 				>
+
 					<SelectControl
 						label={__('Select a menu', 'classic-menu-block')}
-						options={options}
+						options={menu_options}
 						value={menu}
 						onChange={onSaveMenu}
+					/>
+
+					<SelectControl
+						label={__('Select a theme location', 'classic-menu-block')}
+						options={location_options}
+						value={theme_location}
+						onChange={onSaveLocation}
 					/>
 				</Placeholder>
 			) : (
