@@ -22,17 +22,17 @@
 		"test:unit": "wp-scripts test-unit-js"
 	},
 	"dependencies": {
-		"@wordpress/block-editor": "11.8.0",
-		"@wordpress/blocks": "12.8.0",
+		"@wordpress/block-editor": "^11.8.0",
+		"@wordpress/blocks": "^12.8.0",
 		"@wordpress/components": "^23.8.0",
 		"@wordpress/core-data": "^6.8.0",
 		"@wordpress/data": "^9.1.0",
-		"@wordpress/i18n": "4.31.0",
+		"@wordpress/i18n": "^4.31.0",
 		"@wordpress/icons": "^9.22.0",
 		"@wordpress/server-side-render": "^4.8.0"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "26.2.0",
+		"@wordpress/scripts": "^26.2.0",
 		"stylelint-config-wordpress": "^17.0.0"
 	}
 }

@@ -24,7 +24,7 @@ This section describes how to install the plugin and get it working.
 
 ## Screenshots
 
-1. The navigation block <br>![Block](.wordpress-org/screenshot-1.png)
+1. The navigation block \ ![Block](.wordpress-org/screenshot-1.png)
 
 ### Do you accept donations?
 
