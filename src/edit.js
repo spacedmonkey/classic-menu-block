@@ -26,41 +26,46 @@ const { name } = metadata;
  * @param {boolean}  props.isSelected
  * @return {WPElement} Element to render.
  */
-export default function Edit({ setAttributes, attributes, isSelected }) {
+export default function Edit( { setAttributes, attributes, isSelected } ) {
 	const { menu = 0 } = attributes || {};
 
 	const { menus, hasMenus } = useNavigationEntities();
 
-	const options = [{ value: 0, label: __('Not set', 'classic-menu-block') }];
-	if (hasMenus) {
-		menus.forEach(function (item) {
-			options.push({ value: parseInt(item.id), label: item.name });
-		});
+	const options = [
+		{ value: 0, label: __( 'Not set', 'classic-menu-block' ) },
+	];
+	if ( hasMenus ) {
+		menus.forEach( function ( item ) {
+			options.push( { value: parseInt( item.id ), label: item.name } );
+		} );
 	}
 
-	const onSaveMenu = (value) => {
-		setAttributes({ menu: parseInt(value) });
+	const onSaveMenu = ( value ) => {
+		setAttributes( { menu: parseInt( value ) } );
 	};
 
 	return (
-		<div {...useBlockProps()}>
-			{isSelected || !menu ? (
+		<div { ...useBlockProps() }>
+			{ isSelected || ! menu ? (
 				<Placeholder
-					label={__('Classic menu', 'classic-menu-block')}
-					icon={icon}
+					label={ __( 'Classic menu', 'classic-menu-block' ) }
+					icon={ icon }
 				>
 					<SelectControl
-						label={__('Select a menu', 'classic-menu-block')}
-						options={options}
-						value={menu}
-						onChange={onSaveMenu}
+						label={ __( 'Select a menu', 'classic-menu-block' ) }
+						options={ options }
+						value={ menu }
+						onChange={ onSaveMenu }
 					/>
 				</Placeholder>
 			) : (
 				<Disabled>
-					<ServerSideRender block={name} attributes={attributes} />
+					<ServerSideRender
+						block={ name }
+						attributes={ attributes }
+					/>
 				</Disabled>
-			)}
+			) }
 		</div>
 	);
 }

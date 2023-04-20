@@ -12,7 +12,7 @@
 	},
 	"attributes": {
 		"anchor": {
-			 "type": "string"
+			"type": "string"
 		},
 		"menu": {
 			"type": "number",
