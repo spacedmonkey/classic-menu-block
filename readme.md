@@ -1,8 +1,8 @@
 # Classic Menu Block
 
-Stable tag: 0.1.5  
+Stable tag: 0.1.6  
 Requires at least: 5.9  
-Tested up to: 6.0  
+Tested up to: 6.2  
 Requires PHP: 5.6  
 License: GPL v2 or later  
 Tags: block, menu, navigation  
@@ -24,7 +24,7 @@ This section describes how to install the plugin and get it working.
 
 ## Screenshots
 
-1. The navigation block <br>![Block](.wordpress-org/screenshot-1.png)
+1. The navigation block \ ![Block](.wordpress-org/screenshot-1.png)
 
 ### Do you accept donations?
 

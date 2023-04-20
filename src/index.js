@@ -19,16 +19,16 @@ const { name, category, attributes, supports } = metadata;
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-registerBlockType(name, {
-	title: __('Classic menu', 'classic-menu-block'),
+registerBlockType( name, {
+	title: __( 'Classic menu', 'classic-menu-block' ),
 	description: __(
 		'Render classic menu data as a block',
 		'classic-menu-block'
 	),
 	keywords: [
-		__('classic', 'classic-menu-block'),
-		__('menu', 'classic-menu-block'),
-		__('navigation', 'classic-menu-block'),
+		__( 'classic', 'classic-menu-block' ),
+		__( 'menu', 'classic-menu-block' ),
+		__( 'navigation', 'classic-menu-block' ),
 	],
 	category,
 	attributes,
@@ -38,4 +38,4 @@ registerBlockType(name, {
 	 * @see ./edit.js
 	 */
 	edit: Edit,
-});
+} );
