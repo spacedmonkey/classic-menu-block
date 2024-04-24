@@ -2,7 +2,7 @@
 
 Stable tag: 0.1.6  
 Requires at least: 5.9  
-Tested up to: 6.2  
+Tested up to: 6.5  
 Requires PHP: 5.6  
 License: GPL v2 or later  
 Tags: block, menu, navigation  
