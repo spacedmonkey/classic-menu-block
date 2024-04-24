@@ -24,7 +24,7 @@ const { name } = metadata;
  * @param {Function} props.setAttributes
  * @param {Object}   props.attributes
  * @param {boolean}  props.isSelected
- * @return {WPElement} Element to render.
+ * @return {Object} Element to render.
  */
 export default function Edit( { setAttributes, attributes, isSelected } ) {
 	const { menu = 0 } = attributes || {};
