@@ -18,8 +18,9 @@ jobs:
                   tools: composer
 
             - name: Setup Node
-              uses: actions/setup-node@v2.5.1
+              uses: actions/setup-node@v4.0.2
               with:
+                  node-version-file: '.nvmrc'
                   cache: npm
 
             - name: Validate composer.json and composer.lock

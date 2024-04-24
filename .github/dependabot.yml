@@ -21,3 +21,12 @@ updates:
     labels:
       - Dependencies
       - JavaScript
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+        interval: "daily"
+    open-pull-requests-limit: 10
+    groups:
+        github-actions:
+            patterns:
+                - "*"
