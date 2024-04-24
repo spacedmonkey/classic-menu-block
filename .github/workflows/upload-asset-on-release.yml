@@ -24,6 +24,7 @@ jobs:
             - name: Setup Node
               uses: actions/setup-node@v4.0.2
               with:
+                  node-version-file: '.nvmrc'
                   cache: npm
 
             - name: Setup Workflow Context
