@@ -28,7 +28,7 @@
 		"@wordpress/core-data": "^6.8.0",
 		"@wordpress/data": "^9.1.0",
 		"@wordpress/i18n": "^4.31.0",
-		"@wordpress/icons": "^9.22.0",
+		"@wordpress/icons": "^9.48.0",
 		"@wordpress/server-side-render": "^4.8.0"
 	},
 	"devDependencies": {
