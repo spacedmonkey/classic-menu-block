@@ -32,6 +32,6 @@
 		"@wordpress/server-side-render": "^4.8.0"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^27.7.0"
+		"@wordpress/scripts": "^28.1.0"
 	}
 }
