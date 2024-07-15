@@ -26,7 +26,7 @@
 		"@wordpress/blocks": "^13.2.0",
 		"@wordpress/components": "^28.2.0",
 		"@wordpress/core-data": "^7.2.0",
-		"@wordpress/data": "^10.2.0",
+		"@wordpress/data": "^10.3.0",
 		"@wordpress/i18n": "^5.2.0",
 		"@wordpress/icons": "^10.2.0",
 		"@wordpress/server-side-render": "^5.2.0"
