@@ -29,7 +29,7 @@
 		"@wordpress/data": "^10.2.0",
 		"@wordpress/i18n": "^5.2.0",
 		"@wordpress/icons": "^10.2.0",
-		"@wordpress/server-side-render": "^5.2.0"
+		"@wordpress/server-side-render": "^5.4.0"
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^28.2.0"
